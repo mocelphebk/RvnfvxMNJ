@@ -16,18 +16,13 @@ galleryLinks = {
     'name': "Jak 3",
     'media': [],
   },
-  'jakx': {
-    'name': "Jak X",
+  'jakx': 
     'media': [],
   },
   'misc': {
     'name': "Miscellaneous",
     'media': [],
   }
-}
-
-def get_links(key, folder_to_search):
-  if os.path.isdir(folder_to_search):
     files = glob.glob(folder_to_search + "/*.png", recursive=True)
     files.extend(glob.glob(folder_to_search + "/*.jpg", recursive=True))
     files.extend(glob.glob(folder_to_search + "/*.jpeg", recursive=True))
